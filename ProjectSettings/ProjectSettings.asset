@@ -83,7 +83,7 @@ PlayerSettings:
   androidApplicationEntry: 2
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
@@ -584,7 +584,25 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    EmbeddedLinux: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    GameCoreScarlett: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    GameCoreXboxOne: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    Kepler: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    LinuxHeadlessSimulation: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    Nintendo Switch: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    Nintendo Switch 2: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    PS4: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    PS5: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    QNX: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    Standalone: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    VisionOS: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    WebGL: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    Windows Store Apps: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    XboxOne: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    iPhone: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
+    tvOS: DOTWEEN;DOTWEEN_NOAUDIO;DOTWEEN_NOPHYSICS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -683,11 +701,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: bcce85cc-41e8-4a20-b390-7ef7332087a8
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Let Us Cook
-  organizationId: pixelling
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
