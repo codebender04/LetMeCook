@@ -20,10 +20,17 @@ public class PlayerMovement : NetworkBehaviour
     /// <summary>Last direction the owner moved in. Used to aim interaction.</summary>
     public Vector2 FacingDir { get; private set; } = Vector2.down;
 
+    // Position is owner-authoritative, so the owner places itself.
+    public override void OnNetworkSpawn()
+    {
+        if (IsOwner && PlayerSpawnPoints.Instance != null)
+            transform.position = PlayerSpawnPoints.Instance.Get(OwnerClientId);
+    }
+
     private void Update()
     {
         // Every client applies the flip for every player.
-        visual.localScale = new Vector3(facingLeft.Value ? -1f : 1f, 1f, 1f);
+        visual.localRotation = Quaternion.Euler(0f, facingLeft.Value ? 180f : 0f, 0f);
 
         if (!IsOwner)
             return;

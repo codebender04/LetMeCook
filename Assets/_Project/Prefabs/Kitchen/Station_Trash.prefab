@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7212943362308982665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378337881810319399, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521108913821482908, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Name
+      value: Station_Trash
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088470535549503748, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088470535549503748, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.22749999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088470535549503748, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.20799999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088470535549503748, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.20799999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830557355362388559, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830557355362388559, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830557355362388559, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534039265929241354, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      propertyPath: m_text
+      value: TRASH
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3521108913821482908, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7625570607133054187}
+    - targetCorrespondingSourceObject: {fileID: 3521108913821482908, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3181847620813781922}
+  m_SourcePrefab: {fileID: 100100000, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+--- !u!4 &4754253450935175531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2730031944079953634, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+  m_PrefabInstance: {fileID: 7212943362308982665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6108279825585813525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3521108913821482908, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+  m_PrefabInstance: {fileID: 7212943362308982665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7625570607133054187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6108279825585813525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 2753959982
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  m_InScenePlaced: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &3181847620813781922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6108279825585813525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ed489672412d44bb5ccaddf80ea77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrashCounter
+  ShowTopMostFoldoutHeaderGroup: 1
+  holdPoint: {fileID: 4754253450935175531}
+  selectedVisual: {fileID: 6520046090210640200}
+--- !u!1 &6520046090210640200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4495259395623372481, guid: dfbb11ccbabb4dd4e9c072077533be8a, type: 3}
+  m_PrefabInstance: {fileID: 7212943362308982665}
+  m_PrefabAsset: {fileID: 0}

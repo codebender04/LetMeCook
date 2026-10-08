@@ -16,12 +16,34 @@ public class Item : NetworkBehaviour
     private readonly NetworkVariable<bool> isHeld = new();
     private readonly NetworkVariable<NetworkObjectReference> holderRef = new();
 
+    [Tooltip("Added to the sorting order while held, so the item draws over its holder.")]
+    [SerializeField] private int heldSortingBoost = 1;
+
     private IItemHolder holder;   // server only
     private Transform follow;     // every client
+
+    private SpriteRenderer[] renderers;
+    private int[] baseSortingOrders;
+
+    private void Awake()
+    {
+        renderers = GetComponentsInChildren<SpriteRenderer>(true);
+        baseSortingOrders = new int[renderers.Length];
+        for (int i = 0; i < renderers.Length; i++)
+            baseSortingOrders[i] = renderers[i].sortingOrder;
+    }
 
     public override void OnNetworkSpawn()
     {
         holderRef.OnValueChanged += (_, _) => follow = null;
+        isHeld.OnValueChanged += (_, held) => ApplySorting(held);
+        ApplySorting(isHeld.Value);
+    }
+
+    private void ApplySorting(bool held)
+    {
+        for (int i = 0; i < renderers.Length; i++)
+            renderers[i].sortingOrder = baseSortingOrders[i] + (held ? heldSortingBoost : 0);
     }
 
     /// <summary>Server only. Spawns a new item straight into a holder.</summary>

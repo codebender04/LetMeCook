@@ -14,8 +14,23 @@ public class PlayerInteraction : NetworkBehaviour, IItemHolder
     [Tooltip("Server rejects interactions from further away than this.")]
     [SerializeField] private float maxServerDistance = 2.5f;
 
+    // Server writes, everyone reads. Lets every client pose the hands.
+    private readonly NetworkVariable<bool> isHolding = new();
+
     public Transform HoldPoint => holdPoint;
-    public Item CurrentItem { get; set; } // server only
+    public bool IsHolding => isHolding.Value;
+
+    private Item currentItem;
+    public Item CurrentItem // server only
+    {
+        get => currentItem;
+        set
+        {
+            currentItem = value;
+            if (IsServer)
+                isHolding.Value = value != null;
+        }
+    }
 
     private BaseCounter selected;
 
@@ -88,7 +103,7 @@ public class PlayerInteraction : NetworkBehaviour, IItemHolder
         InteractServerRpc(selected.NetworkObject);
     }
 
-    [ServerRpc]
+    [Rpc(SendTo.Server)]
     private void InteractServerRpc(NetworkObjectReference counterRef)
     {
         if (!counterRef.TryGet(out NetworkObject counterObject))
